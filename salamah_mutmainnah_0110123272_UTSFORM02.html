@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        body{
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+        }
+        
+        fieldset{
+            border: 2px solid;
+            padding: 5px;
+            background-color: antiquewhite;
+            padding-left: 50px;
+            padding-right: 50px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            margin: 300px; 
+
+        }
+        input{
+            border: 2px solid;
+            padding: 5px;
+           
+        }
+        textarea{
+            border: 2px solid;
+            padding: 5px;
+           
+        }
+        input [type="submit"] {
+            background-color: rgb(87, 81, 81);
+        
+        }
+        
+            
+
+    </style>
+</head>
+<body>
+        <div class="form-container">
+    <fieldset>
+       <legend> Booking Service </legend>  
+        
+    <form action=""> 
+        <p> Jenis kendaraan : <input type="text " list="edulevel"> </p> 
+        <datalist id="edulevel">
+            <option value="Minibus">
+        </datalist>
+
+        <div class="nama">
+            <label for="nama"> Nama Pemesan : </label>
+            <input type="text" id="nama">
+        </div>
+        <br>
+        <div class="peminjam">  
+            <label for="peminjam"> Kategori Peminjam :  </label>
+        <input type="radio" name="opsi1" value="Pribadi"> 
+        <label for="opsi1"> Pribadi </label> 
+        <input type="radio" name="kategori" value="Perusahaan/Organisasi">
+        <label for="opsi2"> Perusahaan/Organisai</label>
+        </div>
+        <br>
+        <div class="Deskripsi">
+            <label for="Deskripsi"> Deskripsi Kebutuhan : <textarea nama="Deskripsi" cols="50"rows="5"></textarea> </label>
+        </div>
+        <br>
+        <p>
+            <label> Jam, Tanggal Service :
+                <input type="datetime-local"/>
+            </label>
+        </p>
+
+        <div class="request">
+            <label for="request"> Request Montir : </label>
+            <input type="text" id="request">
+        </div>
+        <br>
+        <div class="nomor">
+            <label for="request"> Telpon/HP : </label>
+            <input type="number" id="nomor">
+        </div>
+        <br>
+        <div class="email">
+            <label for="request"> Email : </label>
+            <input type="text" id="email">
+        </div>
+        <br>
+        <input type = "submit" value = "Submit">
+        <input type = "reset">
+
+    </form>
+    </fieldset>
+        </div>
+</body>
+</html>
